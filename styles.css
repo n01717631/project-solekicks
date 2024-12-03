@@ -1,0 +1,126 @@
+
+body {
+    background-color: #E8E2C8;
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    border: 10px solid black;
+    padding: 0;
+}
+
+.main-container {
+    background-color: #E8E2C8;
+    min-height: 100vh; 
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    z-index: 10; 
+}
+
+.logo {
+    width: 73px; 
+    height: auto;
+}
+
+.contact-info, .contact-form {
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: #5B3A2E; 
+    color: #FFFFFF;
+
+    padding: 20px 40px; 
+    box-sizing: border-box; 
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+    color: #CCC;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    color: #CCC;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer hr {
+    border: 1px solid #F5F5F5;
+    opacity: 0.5;
+    width: 50%; 
+    margin: 10px auto; 
+}
+.custom-header {
+    position: fixed; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: #ddd; 
+    box-shadow: 0 2px 5px rgba(250, 113, 113, 0.1); 
+    height: 80px; 
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-top: 10px solid black;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cantact-text{
+    margin-top: 80px;
+}
