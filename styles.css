@@ -9,10 +9,7 @@ body {
 
 .main-container {
     background-color: #E8E2C8;
-    /* padding: 20px; */
-    /* width: 100vw;  */
     min-height: 100vh; 
-    /* border: 10px solid black;  */
     box-sizing: border-box; 
     margin-bottom: 20px;
     position: relative; 
@@ -26,7 +23,7 @@ body {
 }
 
 .logo {
-    width: 80px; 
+    width: 73px; 
     height: auto;
 }
 
@@ -54,8 +51,6 @@ body {
     color: #FFFFFF;
 
     padding: 20px 40px; 
-    /* max-width: 1200px;  */
-    /* margin: 0 auto;  */
     box-sizing: border-box; 
 }
 
@@ -89,4 +84,43 @@ body {
     opacity: 0.5;
     width: 50%; 
     margin: 10px auto; 
+}
+.custom-header {
+    position: fixed; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: #ddd; 
+    box-shadow: 0 2px 5px rgba(250, 113, 113, 0.1); 
+    height: 80px; 
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-top: 10px solid black;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cantact-text{
+    margin-top: 80px;
 }
