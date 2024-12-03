@@ -1,0 +1,496 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+.custom-header {
+    position: fixed; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: #ddd; 
+    box-shadow: 0 2px 5px rgba(250, 113, 113, 0.1); 
+    height: 80px; 
+}
+
+
+.logo img {
+    height: 80px; 
+    
+}
+
+.nav-menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: red;
+}
+.main-content {
+     display: flex;
+     margin-top: 80px;
+    }
+
+/* Search feature styles */
+.search-feature {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 80px;
+}
+
+.search-feature input {
+    padding: 5px 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-feature button {
+    padding: 6px 12px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-feature button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+.filters {
+    position: fixed; 
+    top: 80; 
+    right: 0;
+    width: 280px; 
+    background-color: rgb(249, 15, 15); 
+    padding: 20px;
+    border-right: 1px solid black;
+    flex: 1;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 80px); 
+    overflow-y: auto;
+    z-index: 1000; 
+}
+
+.filters h3, .filters h4 {
+    margin: 0 0 10px;
+}
+
+.filters ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filters ul li {
+    margin-bottom: 10px;
+}
+
+ /* Promo Section */
+.promo-section {
+    background-color: #f5d3b3; 
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Promo Content Layout */
+.promo-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Left Text Section */
+.promo-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.promo-text h1 {
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.promo-text h3 {
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Center Image Section */
+.promo-image {
+    flex: 1;
+    text-align: center;
+    width: 120px;
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right Sale Section */
+.promo-sale {
+    flex: 1;
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.sale-hat {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.sale-hat::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+
+.sale-hat p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.sale-hat h2 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Order Button */
+.order-button {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.order-button:hover {
+    background-color: #b30000;
+}
+
+
+.product-grid {
+    width: 80%;
+    padding: 20px;
+}
+.price-filters {
+    list-style: none;
+    padding: 0;
+}
+
+.price-filters li {
+    margin-bottom: 10px;
+}
+
+.custom-price-range {
+    margin-top: 20px;
+}
+
+.custom-price-range input {
+    width: 45%;
+    padding: 5px;
+    margin: 0 5px 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.custom-price-range button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    margin-bottom: 20px;
+}
+
+.sort select {
+    padding: 5px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-top: 20px;
+    flex:3;
+    flex-wrap: wrap; 
+  justify-content: space-between;
+}
+                                                                 
+.product-card {    
+    width: 270px; 
+    height: 400px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    background-color: #f6d0d0;
+    overflow: hidden; 
+}
+
+.product-card img {
+    
+    width: 100%; 
+    height: 70%; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+.product-card h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.product-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+
+.clear-filters-box {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.clear-filters:hover {
+    background-color: yellow;
+    color:black;
+}
+
+.price-filters {
+    list-style: none;
+    padding: 0;
+}
+
+.price-filters li {
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.product-card .original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.product-card .ratings {
+    font-size: 14px;
+    color:red;
+}
+.apply-price{
+    background-color: #000;
+    color:white;
+}
+.apply-price:hover {
+    background-color: yellow;
+    color:black;
+}
+
+/* General style for all products */
+[data-categories] {
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Style for products with the 'boots' category */
+[data-categories~="boots"] {
+    background-color: #fef6f6; 
+}
+
+/* Style for products with the 'heels' category */
+[data-categories~="heels"] {
+    background-color: #f6f9ff; 
+}
+
+/* Style for products with the 'sneakers' category */
+[data-categories~="sneakers"] {
+    background-color: #f6fff8; 
+}
+
+/* Hover effect for all products */
+[data-categories]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.deal-container {
+    background-color: #f8f1e4;
+    padding: 50px 20px;
+    border-radius: 4px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+  }
+
+  .deal-text h1 {
+    font-size: 2.5rem;
+    color:rgb(75, 17, 17);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .deal-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .countdown div {
+    text-align: center;
+  }
+
+  .countdown span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #fff; 
+    border: 2px solid #ddd; 
+    border-radius: 8px;
+    width: 70px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .countdown-box span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+
+  }
+
+  .countdown-box label {
+    font-size: 0.9rem;
+    color: #777; 
+  }
+  .countdown label {
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .footer {
+    background-color: #ddd; 
+    color: #000; 
+    font-family: 'Arial', sans-serif; 
+    height: 80px; 
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    display:flex;
+} 
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .filter-section {
+        position: relative; 
+        width: 100%;
+    }
+    .content-section {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
