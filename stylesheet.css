@@ -54,6 +54,7 @@ body {
 .search-feature {
     display: flex;
     align-items: center;
+     justify-content: flex-end;
     gap: 5px;
     margin-left: 80px;
 }
@@ -478,7 +479,7 @@ footer p {
     font-size: 14px;
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .filter-section {
         position: relative; 
         width: 100%;
@@ -487,10 +488,4 @@ footer p {
         margin-left: 0;
     }
 }
-
-
-
-
-
-
 
