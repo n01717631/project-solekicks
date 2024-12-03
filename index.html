@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Deal of the Day</title>
+  
+</head>
+<body>
+    <header class="custom-header">
+    <div class="logo">
+        <img src="sk.png" alt="Logo">
+    </div>
+    <nav class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">Men's</a>
+        <a href="#">Women's</a>
+        <a href="#">Kids</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="product-grid">
+        <div class="search-feature">
+         <input type="text" id="search-input" placeholder="Search products...">
+         <button id="search-button">Search</button>
+     </div>
+    
+</header>
+    <main class="main-content">
+
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="clear-filters-box"></div>
+            <button class="clear-filters">Clear filters</button>            
+        
+            <h4>Category</h4>
+            <ul>
+                <li><input type="checkbox" id="boots"><label for="boots">Boots (11)</label></li>
+                <li><input type="checkbox" id="flats"><label for="flats">Flats (8)</label></li>
+                <li><input type="checkbox" id="heels"><label for="heels">Heels (9)</label></li>
+                <li><input type="checkbox" id="sneakers"><label for="sneakers"> Athletic Shoes (6)</label></li>
+            </ul>
+            <h4>Price</h4>
+            <div class="custom-price-range">
+                <input type="number" id="min-price" placeholder="$Min">
+                <input type="number" id="max-price" placeholder="$Max">
+                <button id="apply-price">Apply</button>
+            </div>
+                    
+            <h4>Sort</h4>
+   <label for="sort">Sort:</label>
+  <select id="sort" onchange="sortProducts()">
+    <option value="featured">Featured</option>
+    <option value="low-to-high">Price: Low to High</option>
+    <option value="high-to-low">Price: High to Low</option>
+    <option value="ratings">Customer Ratings</option>
+  </select>
+            
+        </div>
+             <section class="product-grid">
+            <div class="promo-section">
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <h1>Christmas Sale</h1>
+                        <h3>Women's Shoe Collection</h3>
+                    </div>
+                    <div class="promo-image">
+                        <img src="mainp.png" alt="Red High Heels">
+                    </div>
+                    <div class="promo-sale">
+                        <div class="sale-hat">
+                            <p>up to</p>
+                            <h2>50%</h2>
+                            <p>save</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="order-button">Order Now</button>
+            </div>
+            <div class="container my-5">
+                <div class="deal-container row align-items-center">
+                 
+                  <div class="col-md-6 deal-text">
+                    <h1>Deal Of The Day</h1>
+                    <p>
+                      Wide calf long boots suit most occasions. These modern women's high-heeled boots are
+                       designed with an internal half-zipper to ensure the contours of the calves are fitted and worn quickly and easily
+                    </p>
+                    
+                    <div class="countdown">
+                      <div>
+                        <span id="days">00</span>
+                        <label>Day</label>
+                      </div>
+                      <div>
+                        <span id="hours">00</span>
+                        <label>Hour</label>
+                      </div>
+                      <div>
+                        <span id="minutes">00</span>
+                        <label>Minute</label>
+                      </div>
+                      <div>
+                        <span id="seconds">00</span>
+                        <label>Second</label>
+                      </div>
+                    </div>
+                    <button class="btn btn-dark">Shop Now</button>
+                  </div>
+                 
+                  <div class="col-md-6 text-center">
+                    <img src="FINAL.png" alt="Deal of the day"  style="width: 350px; height: auto;  object-fit: cover">
+                  </div>
+                </div>
+                </div>
+              </div>
+            <div class="products">
+                <div class="product-card"  data-categories="heels">
+                    <img src="heel img/heel1.jpg" alt="heel image">
+                    <h4>Pink Block Heel Sandals</h4>
+                    <p class="price">$77.96</p>
+                    <p class="ratings">★★★★★ (5050)</p>
+
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/nb1.jpeg" alt="boot image">
+                    <h4>Floral Embroidered Combat Boots</h4>
+                    <p class="price">$80.98 <span class="original-price">$100.00</span></p>
+                    <p class="ratings">★★★☆☆ (309)</p>
+                </div>
+                <div class="product-card" data-categories="sneakers">
+                    <img src="shoes img/shoe5.webp" alt="sneaker image">
+                    <h4>Peach Athletic Sneakers</h4>
+                    <p class="price">$60.99 <span class="original-price">$77.00</span></p>
+                    <p class="ratings">★★★★☆ (309)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel11.jpg" alt="heel image">
+                    <h4>Orange Snakeskin Pumps heels</h4>
+                    <p class="price">$76.98 </p>
+                    <p class="ratings">★★★☆☆ (309)</p>
+                </div>
+                <div class="product-card" data-categories="sneakers">
+                    <img src="shoes img/shoe6.webp" alt="sneaker image">
+                    <h4>Cream Knit Sneakers</h4>
+                    <p class="price">$69.00 <span class="original-price">$80.15</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/boot9.webp" alt="boot image">
+                    <h4>Black Fur-Lined Ankle Boots </h4>
+                    <p class="price">$80.05</p>
+                    <p class="ratings">★★★★☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/f8.jpg" alt="flat image">
+                    <h4>Beige Bow Flats</h4>
+                    <p class="price">$48.00 </p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/nb2.jpg" alt="boot image">
+                    <h4>Black Combat Boots</h4>
+                    <p class="price">$90.20 </p>
+                    <p class="ratings"> ★★★☆☆(17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel8.jpg" alt="heel image">
+                    <h4>Gold Glitter Platform Heels</h4>
+                    <p class="price">$100.99 <span class="original-price">$120.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/boot10.webp" alt="boot image">
+                    <h4>Black Suede Knee-High Boots</h4>
+                    <p class="price">$70.95 <span class="original-price">$99.00</span></p>
+                    <p class="ratings">★★★☆☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel2.webp" alt="heel image">
+                    <h4>Nude Patent Pointed Heels</h4>
+                    <p class="price">$35.00 <span class="original-price">$48.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel4.jpg" alt="heel image">
+                    <h4>Yellow Buckle Pumps heels</h4>
+                    <p class="price">$42.99 </p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/boot8.jpg" alt="boot image">
+                    <h4>Beige Chelsea Rain Boots.</h4>
+                    <p class="price">$48.00 </p>
+                    <p class="ratings">★★★☆☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/f5.jpg" alt="flat image">
+                    <h4>Leopard Print Flats.</h4>
+                    <p class="price">$38.95 <span class="original-price">$48.90</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="sneakers ">
+                    <img src="shoes img/ns2.webp" alt="sneaker image">
+                    <h4>Black Knit Sneaker. </h4>
+                    <p class="price">$40.15</p>
+                    <p class="ratings">★★★★☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel7.jpg" alt="heel image">
+                    <h4>Black Patent Platform Heels. </h4>
+                    <p class="price">$90.99 <span class="original-price">$100.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/f4.jpg" alt="flat image">
+                    <h4> Pearl-embellished beige flats</h4>
+                    <p class="price">$50.99<span class="original-price">$60.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/nb3.jpg" alt="boot iamge">
+                    <h4> Black platform boots with buckles</h4>
+                    <p class="price">$89.90 </p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="sneakers">
+                    <img src="shoes img/ns3.webp" alt="sneaker image">
+                    <h4>Grey athletic sneakers</h4>
+                    <p class="price">$52.75 </p>
+                    <p class="ratings">★★★★☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/nb4.png" alt="boot image">
+                    <h4>Tan hiking or combat boots </h4>
+                    <p class="price">$70.35</p>
+                    <p class="ratings">★★★☆☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/nb6.jpg" alt="boot image">
+                    <h4>Leopard print lace-up ankle boots</h4>
+                    <p class="price">$56.98<span class="original-price">$60.75</span></p>
+                    <p class="ratings">★★★☆☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/f3.jpg" alt="flat image">
+                    <h4>Red ballet flats.</h4>
+                    <p class="price">$32.00<span class="original-price">$50.70</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/NH1.webp" alt="heel image">
+                    <h4>Black stiletto heels</h4>
+                    <p class="price">$55.99 </p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/nb5.jpg" alt="boot image">
+                    <h4>White snow boots with fur lining</h4>
+                    <p class="price">$120.00 <span class="original-price">$140.00</span></p>
+                    <p class="ratings">★★★★☆(17)</p>
+                </div>
+                <div class="product-card" data-categories="sneakers">
+                    <img src="shoes img/nns.jpg" alt="sneaker image">
+                    <h4>Casual Skechers-style sneakers</h4>
+                    <p class="price">$45.00 </p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/ff1.jpg" alt="flat image">
+                    <h4>Black strappy flats.</h4>
+                    <p class="price">$49.98 <span class="original-price">$55.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel12.jpeg" alt="heel image">
+                    <h4>Black block- sandal heels.</h4>
+                    <p class="price">$60.00 </p>
+                    <p class="ratings">★★★☆☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/boot5.png" alt="boot image">
+                    <h4>Combat boots with metallic eyelets.</h4>
+                    <p class="price">$89.99</p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel5.jpg" alt="heel image">
+                    <h4>Red high-pump heels</h4>
+                    <p class="price">$77.98<span class="original-price">$80.00</span></p>
+                    <p class="ratings">★★★★☆ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/f1.jpg" alt="flat image">
+                    <h4>Simple black ballerina flats</h4>
+                    <p class="price">$49.75 </p>
+                    <p class="ratings">★★★☆☆(17)</p>
+                </div>
+                <div class="product-card" data-categories="sneakers">
+                    <img src="shoes img/ns1.webp" alt="sneaker image">
+                    <h4>Casual black running sneakers</h4>
+                    <p class="price">$60.15<span class="original-price">$70.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/f2.jpg" alt="flat image">
+                    <h4>Black loafer flats</h4>
+                    <p class="price">$55.90 <span class="original-price">$60.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="flats">
+                    <img src="flat img/ff2.jpg" alt="flat image">
+                    <h4>A pair of embellished flats</h4>
+                    <p class="price">$59.90 <span class="original-price">$70.75</span></p>
+                    <p class="ratings">★★★☆☆(17)</p>
+                </div>
+                <div class="product-card" data-categories="boots">
+                    <img src="boots img/boot3.webp" alt="boot image">
+                    <h4>Brown fur-lined winter boots</h4>
+                    <p class="price">$89.99 <span class="original-price">$95.00</span></p>
+                    <p class="ratings">★★★★★ (17)</p>
+                </div>
+                <div class="product-card" data-categories="heels">
+                    <img src="heel img/heel10.webp" alt="heel image">
+                    <h4>Metallic high- sandal heels</h4>
+                    <p class="price">$58.99 <span class="original-price">$60.00</span></p>
+                    <p class="ratings">★★★★☆ (17)</p>
+                </div>    
+                <div class="product-card"  data-categories="sneakers">
+                    <img src="shoes img/ns4.webp" alt="sneaker image">
+                    <h4> UGG Tasman sneakers</h4>
+                    <p class="price">$40.35</p>
+                    <p class="ratings">★★★☆☆ (5050)</p>
+                </div>
+                </div>
+            </div>
+        </div>
+            </section>
+        </section>
+    </main>
+
+<footer class=footer>
+    
+    <div class="mt-2">
+        <p class="mb-0 fw-bold">SoleKicks ®</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
